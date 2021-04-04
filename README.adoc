@@ -5,8 +5,6 @@
 # Dossier d'architecture 
 Dernière modification : {localdate} {localtime}
 
-*Etat* : _En cours_
-
 Ce dossier est constitué : 
 
 * d’un link:volet-architecture-applicative.adoc[volet applicatif] présentant le contexte général et l’architecture applicative ;
