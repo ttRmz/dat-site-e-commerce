@@ -21,41 +21,8 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 [cols="1,2,5,4"]
 |====
 |N°|Version|Titre/URL du document|Détail
-
-|
-|
-|
-|
-
+|01|1.0.0|link:./cahier-des-charges.pdf[cahier des charges]|section 4.5 : Développement
 |====
-
-== Non statué
-=== Points soumis à étude complémentaire
-.Points soumis à étude complémentaire
-[cols="1,5,2,2,2"]
-|====
-|ID|Détail|Statut|Porteur du sujet  | Échéance
-
-|
-|
-|
-|
-|
-
-|====
-
-
-=== Hypothèses
-.Hypothèses
-[cols="1e,5e"]
-|====
-|ID|Détail
-
-|
-|
-
-|====
-
 
 == Contraintes
 
@@ -63,147 +30,16 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 
 ==== MTTD
 
-==== GTR
+- l’hypervision se fait 24/7/365
 
 ==== Outils et normes de supervision
 
+- Les batchs doivent pouvoir se lancer sur un endpoint REST
+
 ==== Interruptions programmées
 
-==== Niveau de service du datacenter
-
-==== Synthèse de la disponibilité plancher
-
-==== Gestion des catastrophes
+- On estime l’interruption de chaque serveur à 5 mins par mois. Le taux de disponibilité effectif des serveurs en prenant en compte les interruptions programmées système est donc de 99.99 %.
 
 === Hébergement
 
-=== Contraintes réseau
-
-=== Contraintes de déploiement
-
-=== Contraintes de logs
-
-=== Contraintes de sauvegardes et restaurations
-
-=== Coûts
-
-== Exigences
-
-[[plages]]
-=== Plages de fonctionnement
-
-.Plages de fonctionnement
-[cols="1,2,4"]
-|====
-|No plage| Heures | Détail
-
-|====
-
-=== Exigences de disponibilité
-
-==== Disponibilité par plage de fonctionnement
-
-.Durée d’indisponibilité maximale admissible par plage
-[cols="1,5"]
-|====
-|No Plage| Indisponibilité maximale
-
-|====
-
-=== Mode dégradés
-
-=== Exigences de robustesse
-
-=== Exigences de RPO
-
-=== Exigences d'archivage
-
-=== Exigences de purges
-
-=== Exigences de déploiements et de mise à jour
-
-==== Coté serveur
-
-==== Coté client
-
-==== Stratégie de déploiement spécifiques
-
-=== Exigences de gestion de la concurrence
-
-=== Exigences d'écoconception
-
-== Architecture cible
-
-=== Principes de l'architecture technique
-
-=== Disponibilité
-
-=== Déploiement en production
-
-=== Versions des composants d'infrastructure
-
-.Composants d'infrastructure
-[cols="1,2,1,2"]
-|====
-|Composant|Rôle|Version |Environnement technique
-
-|====
-
-=== Matrice des flux techniques
-
-.Matrice de flux techniques
-[cols="1,2,2,2,1,1"]
-|====
-|ID|Source|Destination|Type de réseau|Protocole|Port d'écoute
-
-|====
-
-=== Environnements
-
-=== Écoconception
-
-=== Régulation de la charge
-
-==== Coupe-circuits
-
-==== Qualité de Service
-
-=== Gestion des timeouts
-
-=== Exploitation
-
-==== Ordre d’arrêt/démarrage
-
-==== Opérations programmées
-
-==== Mise en maintenance
-
-==== Sauvegardes et restaurations
-
-==== Archivage
-
-==== Purges
-
-==== Logs
-
-==== Supervision
-
-===== Supervision technique
-
-===== Supervision applicative
-
-===== Outil de pilotage de la supervision
-
-===== Alerting
-
-===== Suivi des opérations programmées
-
-===== Rapports d’exécution des batchs
-
-===== Supervision boite noire
-
-===== Métrologie
-
-=== Migration
-
-=== Décommissionnement
+- Cette solution sera hébergée chez OVH

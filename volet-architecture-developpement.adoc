@@ -23,7 +23,7 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 [cols="1,1,4,4"]
 |====
 |N°|Version|Titre/URL du document|Détail
-|01|1.0.0|link:./README.adoc[cahier des charges]|section 4.5 : Développement
+|01|1.0.0|link:./cahier-des-charges.pdf[cahier des charges]|section 4.5 : Développement
 |==== 
 
 == Non statué
