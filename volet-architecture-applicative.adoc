@@ -27,10 +27,10 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 |===
 |N°|Version|Titre/URL du document|Détail
 
-|
-|
-|
-|
+|1
+|1
+|Cahier des charges 
+|Cahier des charges transmis par le client regroupant toutes les informations relatives au projet
 
 |===
 
@@ -40,28 +40,34 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 
 .Points soumis à étude complémentaire
 [cols="1,6,1,1,1"]
-|===
-|Sujet| Détail | Statut| Porteur du sujet  | Échéance
 
-|===
+N/A
 
 
 === Hypothèses
 
 .Hypothèses
 [cols="1,6"]
-|====
-|ID|Détail
 
-|====
+N/A
 
 == Contexte général
 
 === Objectifs
 
+- Mettre en place un site internet présentant l'entreprise, ses activités et ses produits ou services. -
+Exposer le catalogue des produits ou des services
+- Convaincre les cibles
+- Vendre les produits en ligne dans un système de paiement sécurisé - Fidéliser les clients
+- créer une communauté /forum : les cultures du monde, échanges entre parents, consommateurs… 
+
 === Existant
 
+Il n'existe pas de première version du site web
+
 === Positionnement dans le SI
+
+N/A
 
 === Acteurs
 
@@ -72,10 +78,15 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 |===
 |Acteur|Description|Population|Fréquence d'appels 
 
-|
-|
-|
-|
+|Sophie Pierrat
+|CEO
+|1
+|N/A
+
+|Nicolas Rousseau
+|CEO
+|1
+|N/A
 
 |===
 
@@ -86,10 +97,20 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 |===
 |Acteur|Description|Population|Fréquence d'appels
 
-| 
-|
-|
-|
+|Particuliers
+|Parents d’enfants de 0 à 4 ans et futurs parents, grand parents et entourage des parents (famille, amis)
+|N/A
+|N/A
+
+|Professionnels
+|Les assistantes maternelles
+|N/A
+|N/A
+
+|Collectivités
+|Les crèches, les haltes garderie
+|N/A
+|N/A
 
 |===
 
@@ -97,11 +118,42 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 
 === Budget
 
+N/A
+
 === Planning
+
+Étape 1 : Réunion de démarrage:
+
+- Définition des actions
+- Définition du calendrier définitif
+
+Étape 2 : Analyse complémentaire:
+
+- Point d’avancement du projet
+- Définition des objectifs intermédiaire
+
+Étape 3 : Réalisation:
+
+- Point d’avancement charte graphique
+- Point d’avancement technique
+- Définition des objectifs intermédiaire
+
+Étape 4 : Points d'avancement du projet:
+
+- Fréquence des points d’étapes tous les 15 jours au sein de l’entreprise X
+- Réunion à mi-projet et à la livraison finale
+
+Étape 5 : Installation / Mise en oeuvre
+Étape 6 : Période de tests et formation
+Étape 7 : Mise en production 
 
 === Urbanisation
 
+N/A
+
 == Exigences
+
+N/A
 
 == Architecture cible
 
