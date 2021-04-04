@@ -23,12 +23,8 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 [cols="1,1,4,4"]
 |====
 |N°|Version|Titre/URL du document|Détail
-
-|
-|
-|
-
-|====
+|01|1.0.0|link:./README.adoc[cahier des charges]|section 4.5 : Développement
+|==== 
 
 == Non statué
 
@@ -38,13 +34,7 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 [cols="1,6,1,1,1"]
 |====
 |ID|Détail|Statut|Porteur du sujet  | Échéance
-
-|
-|
-|
-|
-|
-
+|ED1|SEO |À DEFINIR|N/A  | N/A
 |====
 
 === Hypothèses
@@ -54,8 +44,6 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 |====
 |ID|Détail
 
-|
-|
 
 |====
 
@@ -63,81 +51,66 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 
 == Exigences non fonctionnelles
 
-=== Accessibilité
+- Environnement de développement imposé par le donneur d'ordre : prestashop (solution open source)
+
 
 === Ergonomie
 
-==== Charte ergonomique
-
-==== Site Web adaptatif
-
-==== Charte ergonomique
+- Site web responsive avec JavaScript, HTML et CSS
  
-==== Spécificités sur les widgets
+=== Internationalisation (i18n)
 
-==== Polices de caractère
-
-==== Progressive Web Apps (PWA)
-
-==== Navigateurs supportés
-
-==== Internationalisation (i18n)
-
-==== Mode déconnecté
+- Le site proposera une interface en langue française et anglaise
 
 === Exigences de SEO
+
+- Les pages statiques du site devront suivre les bonnes pratiques SEO pour optimiser sa visibilité. Le contenu textuel sera généré par php afin qu’il soit consultable par les moteurs de recherche. Pour avoir un référencement optimal sur les articles du site, il faut un title différent pour chaque page d’article.
+
+- Gestion des META-TAGS par produit et par page de contenu
+
+- Générer un Flux RSS de produits
+
+- Gestion des liens sponsorisés sur devis
 
 == Architecture cible
 
 === Pile logicielle
 
-==== Filière technique retenue
+Environnement de développement imposé par le donneur d'ordre Solution open source : prestashop
 
-==== Composants logiciels
+Le prestataire devra réaliser le site dans l'environnement de développement suivant : 
 
-.Pile logicielle
-[cols="1,4,1"]
-|====
-|Librairie|Rôle|Version 
+- SGBD : mysql
 
-|====
+- Environnement de développement (HTML, PHP, XML, etc.) : PHP
+Pour arriver à notre but, il faudra utiliser différents langages de programmation : HTML, CSS, JavaScript, AJAX, PHP/SQL.
 
-=== Performances
+AJAX et JavaScript serviront à avoir des animations dans le site, entre les pages. PHP servira à générer les contenus texte dans le code source de la page, et SQL servira à la gestion de la base de données.
 
-=== Spécificités d’usine logicielle
+=== Versioning
 
-=== Normes de développement et qualimétrie 
+- D’une façon générale, toute ressource non dérivée (source, outil, script de ci-cd, template, DDL de base de données, …​) doit être versionnée.
 
-=== Patterns notables
+- La version logique globale du projet sera `x.y.z` (<majeur).<évolution>.<fix>)
 
-=== Spécificités des tests
+=== Politique de gestion des commits
 
-=== Éco-conception
+- Tous commit devrai respecter la norme de nommage Angular (link:https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#[AngularJS Git Commit Message Conventions])
 
-=== Gestion de la robustesse
+=== Politique de gestion des branches
 
-==== Gestion des transactions
+- La politique générale adoptée est la TBD (Trunk-Based Development)
 
-==== Gestion des sessions
+- La branche principale est develop. Il s’agit d’une branche protégée vers laquelle il n’est pas possible pousser de commits.
 
-==== Gestion des erreurs
+- Tout commit devra faire l’objet d’une Merge Request avant intégration dans develop. Les critères de qualité (évalués de façon automatique lors de l’intégration continue) devront être atteints pour que le commit soit intégré.
 
-=== Gestion de la configuration
-
-=== Gestion de la concurrence
-
-=== Encodage
+- Chaque fonctionnalité, refactoring significatif ou bugfix sera donc réalisé sur une branche topic dédiée.
 
 === Fuseaux horaires
 
-=== Gestion des logs
-
-==== Règles générales
-
-==== Niveaux et quantité de logs
-
-=== Outils d'administration
-
-=== Tri et Pagination
+- Les heures ne seront jamais stockées sans fuseau horaire. En base, on utilisera des timestamps avec timezone (timestamptz) et en JS, des objets intégrant le fuseau horaire de façon explicite ou des epochs. La précision sera au moins de la milliseconde.
 
 === Provisionning et mises à jour des données
+
+- Accès FTP au serveur via le logiciel FileZilla.
