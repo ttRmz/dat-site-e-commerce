@@ -23,7 +23,7 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 |====
 |N°|Version|Titre/URL du document|Détail
 
-||||
+|1|1|Cahier des charges|Cahier des charges transmis par le client regroupant toutes les informations relatives au projet
 
 |====
 
@@ -34,22 +34,16 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 .Points soumis à étude complémentaire
 [cols="1,1,1,2,2"]
 |====
-|ID|Détail|Statut|Porteur du sujet  | Échéance
-|| | |  | 
-
 |====
-
+N/A
 
 === Hypothèses
 
 .Hypothèses
 [cols="1,4"]
 |====
-|ID|Détail
-
-||
-
 |====
+N/A
 
 == Contraintes
 
