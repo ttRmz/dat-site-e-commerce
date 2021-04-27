@@ -34,8 +34,11 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 .Points soumis à étude complémentaire
 [cols="1,1,1,2,2"]
 |====
+ID|Détail|Statut|Porteur du sujet|Échéance
+
+|1|Mise en place d'un serveur de back-up|En-cours|Predy Marwin|01/05/2021
+
 |====
-N/A
 
 === Hypothèses
 
@@ -43,32 +46,60 @@ N/A
 [cols="1,4"]
 |====
 |====
-N/A
+1° Nous estimons avoir un trafic d'environs 10 000 personnes / jours 
+
+2° Le site devra supporter la connexion simultannées de plus de 1 000 personnes 
+
+3° Un serveur de sauvegardes jounalières devra etre mis en place
+
+4° Le temps de réponse du serveur devra etre inférieur à 1 sec
+
 
 == Contraintes
 
 === Contraintes stockage
 
+1° La base de données devra etre assez grande pour pouvoir gerer tous les aspects du site e-commerce 
+
 === Contraintes CPU
+
+N/A
 
 === Contraintes mémoire
 
+N/A
+
 === Contraintes réseau
+
+1° Les temps de reponses du serveur ne devront pas etre supperieurs à 1sec 
 
 == Exigences
 
+N/A
+
 === Volumétrie statique
+
+N/A
 
 ==== Métriques
 
 |====
-|Métrique|Description |Mesurée ou Estimée ? | Valeur | Augmentation annuelle prévisionnelle (%) |  Source| Détail/hypothèses
 
-| | |  |   |  |    | 
+N/A
 
 |====
 
 ==== Estimation besoins de stockage
+
+Nous avons besoin de prendre en compte : 
+
+    La taille des bases de données.
+
+    La taille des fichiers produits.
+
+    La taille des files.
+
+    La taille des logs.
 
 === Volumétrie dynamique
 
@@ -77,7 +108,14 @@ N/A
 |====
 |Métrique|Description |Mesurée ou Estimée ? | Valeur | Augmentation annuelle prévisionnelle (%) | Saisonnalité|  Source| Détail/hypothèses 
 
-| | |  |   | |  | | 
+|D1 |Proportion d’utilisateurs se connectant au service / J | Estimée | 50%  |20% | Constant sur l’année
+
+Constant sur la semaine
+
+Fortes periodes d'activité pendant les fetes | | Les utilisateurs sont soit des professionnels ou bien des particuliers utilisants le site à toutes heures de la journée
+
+|D2 |Sauvegarde jounalière des serveurs | Estimée | 2%  |1% | Constant sur l’année| | Sauvegarde du serveur principal sur un serveur dédié en cas de problèmes
+
 |====
 
 ==== Estimation de la charge
@@ -91,7 +129,9 @@ N/A
 |====
 |Type de sollicitation|Bon niveau|Niveau moyen|Niveau insuffisant
 
-||||
+|Chargement d’une page|< 0,5 s|	< 1 s| > 2 s
+|Chargement des articles|< 0,5 s|< 1 s| > 2 s
+|Poceder aux paiement|< 2 s|< 2,5 s| > 4 s
 
 |====
 
@@ -105,9 +145,9 @@ N/A
 [cols="2,1,1,3,2"]
 |====
 |Profil|CPU|Mémoire|Disque interne|Disque SAN
-
-|||||
 |====
+
+N/A
 
 === Dimensionnement des machines
 
@@ -115,7 +155,6 @@ N/A
 [cols='1,3,1,1,1,1,1']
 |====
 |Zone | Type de machine | Nb de machines | Nb (V)CPU  | Mémoire (Gio) | Disque interne (Gio) | Disque externe  (Gio)
-
-|||||||
-
 |====
+
+N/A
