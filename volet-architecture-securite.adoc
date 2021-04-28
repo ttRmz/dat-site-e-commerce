@@ -15,8 +15,6 @@ Ceci est le point de vue sécurité. Il décrit l'ensemble des dispositifs mis e
 
 Les autres volets du dossier sont accessibles link:./README.adoc[d'ici].
 
-Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfinirons pas ici les termes fonctionnels ou techniques utilisés.
-
 === Documentation de Référence
 
 .Références documentaires sécurité
@@ -28,15 +26,10 @@ Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfin
 |2|n/a|Sécurité : Sécuriser les sites web|Recommandations faites par la CNIL au niveau de la sécurisation des donées des utilisateurs
 |====
 
-
 == Non statué
 
 === Points soumis à étude complémentaire
 
-.Points soumis à étude complémentaire
-[cols="1,3,1,1,2"]
-|====
-|====
 N/A
 
 === Hypothèses
@@ -169,24 +162,13 @@ N/A
 
 Dispositifs répondant aux <<exigences-integrite,exigences d'intégrité>> :
 
-.Mesures pour assurer le niveau d'intégrité demandé
-|===
-|Classe de données|Niveau exigé|Mesures
-|===
-
 TBD
 
 === Confidentialité
 
 Dispositifs répondant aux <<Exigences de confidentialité>> :
 
-.Mesures pour assurer le niveau de confidentialité demandé
-|===
-|Classe de données|Niveau exigé|Mesures
-|Données utilisateurs |Reservée| L'accès à ces données sont reservées à leur urilisateur ou à l'administrateur du site
-
-
-|===
+TBD
 
 === Identification
 
@@ -206,54 +188,7 @@ Dispositifs répondant aux <<exigences-authentification,exigences d'authentifica
 
 - Les mots de passe ne seront en aucun cas conservés mais stockés sous la forme de digest bcrypt.
 
-==== Comptes de service
-
-.Comptes de service
-[cols='1,2,2']
-
-N/A
-
-
-=== Fédération d’identité
-
-Dispositifs répondant aux <<exigence-federation-identite,exigences de fédération d’identité>> : 
-
-N/A
-
-=== SSO, SLO
-
-Dispositifs répondant aux <<Exigences de SSO et SLO> :
-
-N/A
-
-=== Non-répudiation
-
-Dispositifs répondant aux <<Exigences de non répudiation>> :
-
-N/A
-
-=== Anonymat et vie privée
-
-Dispositifs répondant aux <<exigence-anonymat,exigences d'anonymat et de respect de la vie privée>> :
-
-N/A
-=== Habilitations
-
-Dispositifs répondant aux <<Exigences sur les habilitations>> :
-
-=== Tracabilité, auditabilité
-
-Dispositifs répondant aux <<exigence-tracabilite,exigences de traçabilité et d'auditabilité>> :
-
 == Auto-contrôles
-
-=== Auto-contrôle des vulnérabilités
-
-.Checklist d'auto-contrôle de prise en compte des vulnérabilités courantes
-|===
-|Vulnérabilité |Pris en compte ? |Mesures techniques entreprises
-
-|===
 
 === Auto-contrôle RGPD
 

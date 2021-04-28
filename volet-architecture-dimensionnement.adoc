@@ -14,8 +14,6 @@ Ceci est le point de vue dimensionnement du projet. Il permet de déterminer la 
 
 Les autres volets du dossier sont accessibles link:./README.adoc[d'ici].
 
-Le glossaire du projet est disponible link:glossaire.adoc[ici]. Nous ne redéfinirons pas ici les termes fonctionnels ou techniques utilisés.
-
 === Documentation de Référence
 
 .Références documentaires dimensionnement
@@ -75,11 +73,7 @@ N/A
 
 == Exigences
 
-N/A
-
 === Volumétrie statique
-
-N/A
 
 ==== Métriques
 
@@ -93,13 +87,10 @@ N/A
 
 Nous avons besoin de prendre en compte : 
 
-    La taille des bases de données.
-
-    La taille des fichiers produits.
-
-    La taille des files.
-
-    La taille des logs.
+- La taille des bases de données.
+- La taille des fichiers produits.
+- La taille des files.
+- La taille des logs.
 
 === Volumétrie dynamique
 
@@ -118,8 +109,6 @@ Fortes periodes d'activité pendant les fetes | | Les utilisateurs sont soit des
 
 |====
 
-==== Estimation de la charge
-
 === Exigences de temps de réponse
 
 ==== Temps de Réponse des IHM
@@ -134,27 +123,3 @@ Fortes periodes d'activité pendant les fetes | | Les utilisateurs sont soit des
 |Poceder aux paiement|< 2 s|< 2,5 s| > 4 s
 
 |====
-
-==== Durée d’exécution des batchs
-
-== Dimensionnement cible
-
-=== Estimation des besoins en ressources par composant technique
-
-.Estimation des besoins en ressources par composant technique
-[cols="2,1,1,3,2"]
-|====
-|Profil|CPU|Mémoire|Disque interne|Disque SAN
-|====
-
-N/A
-
-=== Dimensionnement des machines
-
-.Dimensionnement des machines
-[cols='1,3,1,1,1,1,1']
-|====
-|Zone | Type de machine | Nb de machines | Nb (V)CPU  | Mémoire (Gio) | Disque interne (Gio) | Disque externe  (Gio)
-|====
-
-N/A
